@@ -15,7 +15,7 @@ always @(in) begin
     10'b_00100_00000: out = 7;
     10'b_01000_00000: out = 8;
     10'b_10000_00000: out = 9;
-    default: out = 4'b_xxxx;
+    default: out = 4'h_x;
     endcase
 end
 
