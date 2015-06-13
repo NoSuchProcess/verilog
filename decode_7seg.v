@@ -24,8 +24,6 @@ always @(data or select) begin
             /* 'r' */ 13: begin a = 1; b = 0; c = 0; d = 0; e = 1; f = 1; g = 0; end
             /* 'E' */ 14: begin a = 1; b = 0; c = 0; d = 1; e = 1; f = 1; g = 1; end
             /* ' ' */ 15: begin a = 0; b = 0; c = 0; d = 0; e = 0; f = 0; g = 0; end
-            /* or */
-            default: begin a = 1'bx; b = 1'bx; c = 1'bx; d = 1'bx; e = 1'bx; f = 1'bx; g = 1'bx; end
         endcase
     else begin
         a = 1'bz; b = 1'bz; c = 1'bz; d = 1'bz; e = 1'bz; f = 1'bz; g = 1'bz;
